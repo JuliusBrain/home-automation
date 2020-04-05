@@ -1,0 +1,110 @@
+2020-04-06 00:25:29,633 ERROR: Exception on /index [GET] [in /Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/routes.py", line 17, in index
+    return render_template("index.html", items=items)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/templates/index.html", line 1, in top-level template code
+    {% include "content.html" %}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/templates/content.html", line 66, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2020-04-06 00:26:04,777 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-06 00:27:44,739 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-06 00:29:03,207 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-06 00:35:25,107 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-06 00:35:27,307 ERROR: Exception on / [GET] [in /Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/routes.py", line 17, in index
+    return render_template("index.html", items=items)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/templates/index.html", line 1, in top-level template code
+    {% include "content.html" %}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/templates/content.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 3, in block "doc"
+    <html{% block html_attribs %}{% endblock html_attribs %}>
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 11, in block "html"
+    {%- endblock metas %}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 13, in block "body"
+    {%- block styles %}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/templates/base.html", line 49, in block "content"
+    {% block app_content %}{% endblock %}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/templates/content.html", line 9, in block "app_content"
+    {% include "add_item.html" %}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/templates/add_item.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 3, in block "doc"
+    <html{% block html_attribs %}{% endblock html_attribs %}>
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 11, in block "html"
+    {%- endblock metas %}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 13, in block "body"
+    {%- block styles %}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/templates/base.html", line 49, in block "content"
+    {% block app_content %}{% endblock %}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/templates/add_item.html", line 8, in block "app_content"
+    {{ wtf.quick_form(form) }}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/wtf.html", line 157, in template
+    document is interpreted as a reference to the start of that document,
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
