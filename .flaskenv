@@ -1,0 +1,1 @@
+FLASK_APP=home_automation.py
