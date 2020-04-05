@@ -13,7 +13,7 @@ from werkzeug.urls import url_parse
 @app.route("/index")
 @login_required
 def index():
-    items = Item.query.all()
+    items = Item.query.filter_by(user_id=current_user.id)
     return render_template("index.html", items=items)
 
 
@@ -63,6 +63,7 @@ def add_item():
         item = Item(
             name=form.name.data, description=form.description.data, user=current_user
         )
+        print(form.description.data)
         db.session.add(item)
         db.session.commit()
         flash("Your Home item is now added!")

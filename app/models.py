@@ -28,12 +28,12 @@ def load_user(id):
 
 class Item(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(140))
+    name = db.Column(db.String(140), index=True)
     description = db.Column(db.String(140), index=True, nullable=False)
     status = db.Column(db.Boolean, default=False)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     user_id = db.Column(db.Integer, db.ForeignKey("user.id"))
 
     def __repr__(self):
-        return "<Item {}>".format(self.body)
+        return "<Item {}>".format(self.name)
 
