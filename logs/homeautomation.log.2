@@ -1,0 +1,77 @@
+2020-04-05 23:20:58,662 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:32]
+2020-04-05 23:23:51,130 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:32]
+2020-04-05 23:24:04,744 ERROR: Exception on /add [POST] [in /Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/routes.py", line 66, in add_item
+    print(item)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/models.py", line 38, in __repr__
+    return "<Item {}>".format(self.body)
+AttributeError: 'Item' object has no attribute 'body'
+2020-04-05 23:25:40,786 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:32]
+2020-04-05 23:26:15,733 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:32]
+2020-04-05 23:55:38,155 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-05 23:55:40,254 ERROR: Exception on / [GET] [in /Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/routes.py", line 17, in index
+    return render_template("index.html", items=items)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/templates/index.html", line 1, in top-level template code
+    {% include "content.html" %}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/templates/content.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/juliusbrain/Work/Personal/signzy/home-automation/app/templates/base.html", line 69, in template
+    {% block content %}{% endblock %}
+jinja2.exceptions.TemplateAssertionError: block 'content' defined twice
+2020-04-05 23:56:47,379 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-05 23:59:48,405 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-06 00:01:58,244 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-06 00:04:00,089 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-06 00:04:27,853 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-06 00:06:17,168 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-06 00:08:24,554 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-06 00:11:50,520 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-06 00:14:42,290 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-06 00:20:13,365 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-06 00:20:57,876 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-06 00:22:02,610 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-06 00:22:32,934 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
+2020-04-06 00:25:26,991 INFO: Home Automation [in /Users/juliusbrain/Work/Personal/signzy/home-automation/app/__init__.py:34]
