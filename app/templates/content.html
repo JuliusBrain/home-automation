@@ -41,8 +41,8 @@
             <td><strong>{{ item.name }}</strong></td>
             <td>{{ item.description }}</td>
             <td>
-              <a class="{{ 'btn btn-success' if item.status else 'btn btn-dark'}}" href="/turn/{{ item.id }}">
-                Turn Status
+              <a class="{{ 'btn btn-success' if item.status else 'btn btn-danger'}}" href="/turn/{{ item.id }}">
+                Turn On/Off
               </a>
               <a class="btn btn-danger" href="/delete/{{ item.id }}">
                 Delete
